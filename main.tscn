@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cn5kxyuuli1wv" path="res://models/quest_touch_plus_right.glb" id="5_mdlr"]
 [ext_resource type="Script" uid="uid://bkeashwobe3gi" path="res://xr_passthrough.gd" id="6_pass"]
 [ext_resource type="Shader" uid="uid://bdncegx70k5ge" path="res://floor_grid.gdshader" id="7_grid"]
+[ext_resource type="Script" uid="uid://ymut5nabakxn" path="res://node.gd" id="8_5vw27"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cjouy"]
 
@@ -178,3 +179,6 @@ directional_shadow_max_distance = 12.0
 script = ExtResource("6_pass")
 world_environment = NodePath("../WorldEnvironment")
 hide_in_passthrough = Array[NodePath]([NodePath("../Floor")])
+
+[node name="Node" type="Node" parent="." unique_id=1879688742]
+script = ExtResource("8_5vw27")
